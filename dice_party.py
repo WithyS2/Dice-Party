@@ -212,13 +212,37 @@ class TelaJogo(TelaBase):
                     coins_cat_1 = 0
                 if round_counter_d == 15 and round_counter_c == 15:
                     if star_duck_1 > star_cat_1:
-                        exibir_mensagem(screen, f'The Duck Wins!!!', 2000, 1280, 600)
-                    if star_cat_1 > star_duck_1:
+                        exibir_mensagem(screen, f'The Duck Wins!!!', 5000, 1280, 400)
+                        coins_cat_1 = 10
+                        coins_duck_1 = 10
+                        star_cat_1 = 0
+                        star_duck_1 = 0
+                        contagem_cat = 0
+                        contagem_duck = 0
+                        round_counter_c = 0
+                        round_counter_d = 0
                         self.next = MenuScreen()
-                        exibir_mensagem(screen, f'The Cat Wins!!!', 2000, 1280, 600)
+                    if star_cat_1 > star_duck_1:
+                        exibir_mensagem(screen, f'The Cat Wins!!!', 5000, 1280, 400)
+                        coins_cat_1 = 10
+                        coins_duck_1 = 10
+                        star_cat_1 = 0
+                        star_duck_1 = 0
+                        contagem_cat = 0
+                        contagem_duck = 0
+                        round_counter_c = 0
+                        round_counter_d = 0
                         self.next = MenuScreen()        
                     if star_duck_1 == star_cat_1:
-                        exibir_mensagem(screen, f'We have a Tie!!!', 2000, 1280, 400)
+                        exibir_mensagem(screen, f'We have a Tie!!!', 5000, 1280, 400)
+                        coins_cat_1 = 10
+                        coins_duck_1 = 10
+                        star_cat_1 = 0
+                        star_duck_1 = 0
+                        contagem_cat = 0
+                        contagem_duck = 0
+                        round_counter_c = 0
+                        round_counter_d = 0
                         self.next = MenuScreen()
 
                 
