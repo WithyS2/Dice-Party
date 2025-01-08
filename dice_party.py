@@ -210,7 +210,7 @@ class TelaJogo(TelaBase):
                 
                 if coins_cat_1 < 0:
                     coins_cat_1 = 0
-                if round_counter_d == 1 and round_counter_c == 1:
+                if round_counter_d == 15 and round_counter_c == 15:
                     if star_duck_1 > star_cat_1:
                         exibir_mensagem(screen, f'The Duck Wins!!!', 2000, 1280, 600)
                     if star_cat_1 > star_duck_1:
